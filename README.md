@@ -1,6 +1,28 @@
 ### MIKHMON V3
 
+#### Download update.zip
+[update.zip](https://raw.githubusercontent.com/laksa19/laksa19.github.io/master/download/update.zip){:target="_blank"}
+
 ### Changelog
+
+#### Update 24-01 2021
+1. Added docker-compose.yml for test-lab. added mikrotik routeros image.
+	- git clone project
+	- open project folder in terminal
+	- run terminal command --> docker-compose up -d
+	- go to localhost:8081. write ip address 192.168.88.1. write password 12345. apply configuration.
+	- go to localhost:8080. user:mikhmon password:1234. add router. ip address 172.27.0.7, user:admin, password: 12345. write 'test' other inputs.last click save button
+	- for stop --> docker-compose down
+	
+#### Update 09-08 2020 V3.19
+1. Penambahan jumlah sisa voucher di "option comment" laman user list.
+
+#### Update 04-07 2020
+1. Added Dockerfile for test
+	- git clone project
+	- docker build --tag mikhmonv3 .
+	- docker run --rm -i -t -p 8080:80 --name="mkhmn1" mikhmonv3
+	- go to localhost:8080
 
 #### Update 08-16 2019 V3.18
 1. Penambahan harga jual. (Harga yang tampil di voucher)
